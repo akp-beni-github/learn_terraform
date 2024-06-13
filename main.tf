@@ -17,11 +17,13 @@ terraform {
 }
 
 resource "github_repository" "example" {
-  name        = "example_created_by_terraform"
-  description = "My awesome codebase"
+  name        = var.name
+  description = var.description
 
-  visibility = "public"
+  visibility = var.visibility
 }
+
+
 
 /*
 resource "aws_instance" "web" {

@@ -7,5 +7,5 @@ provider "aws" {
 
 
 provider "github" {
-  token = "ghp_mytoken" //expired 14 jun 2024
+  token = var.githubtoken 
 }
